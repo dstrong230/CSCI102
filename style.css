@@ -5,9 +5,11 @@
     box-sizing: border-box;
 }
 body{
-    background-color: #666666;
-    color: #333333;
+    background-color: #fff;
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    
 }
 
 Header{
@@ -15,18 +17,23 @@ Header{
     display: inline-flex;
     justify-content: space-around;
     text-align: center;
-    position: fixed;
+    position: absolute;
     border-bottom: 1px solid coral;
+    background-color: black;
     padding: 35px;
     z-index: 1;
+    
 }
 
 .logo{
-    font-size: 20px;
+    font-size: 35px;
     float: left;
-    color:black;
+    color:#fff;
     text-emphasis: bold;
    font-weight: 300;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   
+
 
 }
 
@@ -60,11 +67,14 @@ nav ul li ul li a{
 }
 nav a{
     padding: 5px 20px;
-    display: block;
+    display: inline-block;
     text-decoration: none;
-    color: black;
+    color:black;
     text-emphasis: bold;
-    background-color:#fff;
+    background-color: #fff;
+    border: .5px outset #fff;
+    
+    
 }
 
 .show{background-image: url(../Images/Baker.JPG);
@@ -86,7 +96,9 @@ text-align:center ;
 .show-items h2{
     color: white;
     background-color:coral;
-    padding: 10px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 5px outset #fff;
     
 }
 
@@ -112,7 +124,7 @@ border-radius: 2em;
 main{
 
     width: 80%;
-    margin: 0 auto;
+    margin: 30px;
 }
 
 .box{
@@ -126,13 +138,13 @@ main{
 }
 
 .box img{
-    width: 100px;
+    width: 200px;
     margin: 20px;
 }
 
 footer{
-    background-color: #333333;
-    color: #fff;
+    background-color: #fff;
+    color:black;
     text-align: center;
 }
 
@@ -144,3 +156,58 @@ footer{
 position: relative
 
 }
+
+.column {
+    float: left;
+    width: 33.33%;
+   justify-content: center; 
+font-size: medium;
+   padding: 1em;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   padding-left: 5em;
+  
+  
+  }
+
+ 
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+     
+  }
+
+
+  img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 300px;
+    
+  }
+
+
+  p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    justify-content: center;
+    font-size: large;
+   margin: auto;
+  margin-left: auto;
+}
+
+ul{
+    
+list-style-position: outside;
+display: inline-block; 
+ padding-left: 2em;
+ font-size: large;
+}
+
+h2{
+    text-align: center;
+    font-size: x-large;
+}
+
+
